@@ -47,7 +47,7 @@ import sklearn
 
 Did you install Python 2 or 3? Why?  
 
-I installed Python 3 because it is consistent wth the pre-work.
+> I installed Python 3 because it is consistent wth the pre-work and it is what I have used in the past.
 
 ### Q2. Which Python Version Installed   
 
@@ -55,7 +55,7 @@ In the Terminal:
 
 `python3 --version`
 
-Python 3.7.5
+`Python 3.7.5`
 
  
 
