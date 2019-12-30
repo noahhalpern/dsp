@@ -9,7 +9,7 @@
 >> thinkplot.Pmfs([pmf, biased_pmf])
 >> thinkplot.config(xlabel='number of kids', ylabel='pmf')
 ```
-![3-1 pmf] (images/3_1_pmf.png)
+![3-1 pmf](images/3_1_pmf.png)
 
 ```python
 >> pmf.Mean()
