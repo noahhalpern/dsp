@@ -1,21 +1,21 @@
 [Think Stats Chapter 4 Exercise 2](http://greenteapress.com/thinkstats2/html/thinkstats2005.html#toc41) (a random distribution)
 
 ```python
->> r = np.random.random(1000)
->> pmf = thinkstats2.Pmf(r)
+>>> r = np.random.random(1000)
+>>> pmf = thinkstats2.Pmf(r)
 
->> thinkplot.Pmf(pmf)
->> thinkplot.Config(xlabel='random number', ylabel='pmf')
+>>> thinkplot.Pmf(pmf)
+>>> thinkplot.Config(xlabel='random number', ylabel='pmf')
 ```
  ![pmf](images/4_2_pmf.png)
 
  The problem with the PMF is that it is too dense for us to really tell what is going on.
 
  ```python
->> cdf = thinkstats2.Cdf(r)
+>>> cdf = thinkstats2.Cdf(r)
 
->> thinkplot.Cdf(cdf)
->> thinkplot.Show(xlabel='random number', ylabel='cdf')
+>>> thinkplot.Cdf(cdf)
+>>> thinkplot.Show(xlabel='random number', ylabel='cdf')
  ```
  ![cdf](images/4_2_cdf.png)
 
