@@ -92,32 +92,35 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 Bayes' Theorem: p(A|B) = p(A)p(B|A)/p(B)
 
-Probability of identical twins: p(i) = 1/300
+Probability of identical twins: p(identical) = 1/300
 
-Probability of fraternal twins: p(f) = 1/125
+Probability of fraternal twins: p(fraternal) = 1/125
 
-We know that Elvis's twin was a boy. If Elvis's twin was a girl then they could not be identical. So, we are looking for the probability that a set of twins is identical, given that they are both male: **p(i|m)**
+We know that Elvis's twin was a boy. If Elvis's twin was a girl then they could not be identical. So, we are looking for the probability that a set of twins is identical, given that they are both male: **p(identical | male)**
 
 ---
 
-Probability of identical twins both being male is 1/2: p(m|i) = 1/2
+Probability of identical twins both being male is 1/2: p(male | identical) = 1/2
 
-Probability of identical & male twins: p(i & m) = p(i)p(m|i) = 1/300 * 1/2 = 1/600
+Probability of identical & male twins: p(identical & male) = p(identical)p(male | identical) = 1/300 * 1/2 = 1/600
 
-Probability of fraternal twins both being male is 1/4: p(m|f) = 1/4
+Probability of fraternal twins both being male is 1/4: p(male | fraternal) = 1/4
 
-Probability of fraternal & male twins: p(f)p(m|f) = 1/125 * 1/4 = 1/500
+Probability of fraternal & male twins: p(fraternal)p(male | fraternal) = 1/125 * 1/4 = 1/500
 
-Total probability of having a male twin: p(m) = p(i & m) + p(f & m) = 1/600 + 1/500 = 11/3000
+Total probability of having a male twin: p(male) = p(identical & male) + p(fraternal & male) = 1/600 + 1/500 = 11/3000
 
-Applying Bayes' Theorem: **p(i|m) = p(i)p(m|i)/p(m) = (1/600)/(11/3000) = 5/11**
+Applying Bayes' Theorem: **p(identical | male) = p(identical)p(male | identical)/p(male) = (1/600)/(11/3000) = 5/11**
 
+---
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
-How do frequentist and Bayesian statistics compare?
+**How do frequentist and Bayesian statistics compare?**
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Frequentist statistics tests whether a hypothesis is true for a theoretically infinite number of experiments or samples. Frequentist statistics relies on confidence intervals to describe conclusions about values within the infinite dataset.
+
+Bayesian statistics rely on prior knowledge about a problem. This prior knowledge is taken into account alongside new measurements to come up with a new probability. This new probability can then be used as prior knowledge for the calculation of another new probability. Bayesian statistics allows conclusions to be stated directly as probabilities of the various outcomes of a situation rather than a confidence interval.
 
 ---
 
